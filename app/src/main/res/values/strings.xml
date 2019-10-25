@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">hellorelative</string>
+    <string name="button_toast">Hello Toast</string>
+    <string name="show_count">0</string>
+    <string name="button_count">count</string>
+    <string name="toast_message">Hello Toast</string>
+
+</resources>

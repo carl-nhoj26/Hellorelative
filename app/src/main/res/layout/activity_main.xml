@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button_toast"
+        android:layout_width="109dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#b312ee"
+        android:onClick="showToast"
+        android:text="Toast"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,OnClick,RtlCompat"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/show_count"
+        android:layout_width="132dp"
+        android:layout_height="220dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/button_toast"
+        android:background="@color/myBackgroundColor"
+        android:gravity="center"
+        android:text="@string/show_count"
+        android:textColor="@android:color/white"
+        android:textSize="80dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/button_count"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlCompat" />
+
+
+    <Button
+        android:id="@+id/button_count"
+        android:layout_width="109dp"
+        android:layout_height="62dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="136dp"
+        android:background="#b312ee"
+        android:onClick="countUp"
+        android:text="Count"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/show_count"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="OnClick,RtlCompat" />
+
+
+</RelativeLayout>
